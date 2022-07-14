@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'gpsTour',
+  appId: 'com.tecmov.wtour',
+  appName: 'WTour',
   webDir: 'www',
   bundledWebRuntime: false
 };

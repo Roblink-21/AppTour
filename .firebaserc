@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tourproject-8b80e"
+  },
+  "targets": {
+    "tourproject-8b80e": {
+      "hosting": {
+        "app": [
+          "tourproject-8b80e"
+        ]
+      }
+    }
+  }
+}

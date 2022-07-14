@@ -1,0 +1,6 @@
+{
+	"appId": "com.tecmov.wtour",
+	"appName": "WTour",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

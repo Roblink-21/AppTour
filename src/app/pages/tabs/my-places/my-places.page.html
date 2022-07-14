@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text"> Lugares Turisticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="!enableNewPlace">
+    <h3 class="header-product">Lista de lugares</h3>
+
+    <ion-card *ngFor="let place of places">
+      <ion-card>
+        <img src="{{ place.image }}" />
+        <ion-card-header>
+          <ion-card-title>{{ place.name }}</ion-card-title>
+          <ion-card-subtitle>$ {{ place.price }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content> {{ place.description }}</ion-card-content>
+
+        <ion-card-content> {{ place.ubication }}</ion-card-content>
+      
+
+      </ion-card>
+      <ion-button
+        (click)="edit(place)"
+      >
+        <ion-icon slot="icon-only" name="create-sharp"></ion-icon>
+      </ion-button>
+      <ion-button (click)="deleteItem(place)">
+        <ion-icon slot="icon-only" color="danger" name="trash-bin"></ion-icon>
+      </ion-button>
+    </ion-card>
+  </div>
+</ion-content>
